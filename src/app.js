@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Home from './components/pages/Home'
-import Result from './components/results/Result'
+import Show from './components/results/Show'
 
 import './style.scss'
 
@@ -16,9 +16,8 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Switch>
+          <Route path= "/searchresults/:id" component={Show}/>
           <Route path= "/" component={Home}/>
-          <Route path= "/searchresults" component={Result}/>
-
         </Switch>
       </HashRouter>
     )

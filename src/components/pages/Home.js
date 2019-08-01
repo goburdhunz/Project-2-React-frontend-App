@@ -32,7 +32,7 @@ class Home extends React.Component {
       },
       params: {
         q: this.state.searchTerm,
-        scope: 'episode,podcast,curated',
+        scope: 'episodes',
         offset: this.state.nextOffset
       }
     })
@@ -41,8 +41,6 @@ class Home extends React.Component {
           list: res.data.results,
           nextOffset: res.data.next_offset
         })
-          .then(() => this.props.history.push('/searchresults'))
-        console.log(this.props.history)
       })
   }
 
@@ -70,13 +68,15 @@ class Home extends React.Component {
           <div className="container">
             <div className="columns is-multiline">
               {this.state.list.map(result =>
-                <Link className="column is-half-tablet is-one-third-desktop" key={result.id} to={'/searchresults'}>
-                  <Result
-                    image={result.thumbnail}
-                    title={result.title_original}
-                    description={result.description_original}
-                  />
-                </Link>
+                <div className="column is-half-tablet is-one-third-desktop" key={result.id}>
+                  <Link to= {`/searchresults/${result.id}`}>
+                    <Result
+                      image={result.thumbnail}
+                      title={result.title_original}
+                      description={result.description_original}
+                    />
+                  </Link>
+                </div>
               )}
             </div>
           </div>
