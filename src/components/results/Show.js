@@ -30,23 +30,28 @@ class Show extends React.Component{
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="card">
-              <div className="card-image">
-                <figure className="image">
-                  <img src={this.state.pod.image} alt={this.state.pod.title}/>
-                </figure>
+            <div className="column randomcard is-half-tablet is-one-quarter">
+
+              <div className="card cardinfo">
+                <div className="card-image">
+                  <figure className="image">
+                    <img src={this.state.pod.image} alt={this.state.pod.title}/>
+                  </figure>
+                  <audio className="audio" controls="controls" src={this.state.pod.audio}></audio>
+                </div>
+
+                <div className="card-header">
+                  <div className="card-header-title">{this.state.pod.title}</div>
+                </div>
+
+                <div className="card-content">
+                  <p>{this.state.pod.podcast.description}</p>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-
-        <div className="card-header">
-          <div className="card-header-title">{this.state.pod.title}</div>
-        </div>
-        <div className="card-content">
-          <p>{this.state.pod.podcast.description}</p>
-        </div>
-
       </section>
 
     )

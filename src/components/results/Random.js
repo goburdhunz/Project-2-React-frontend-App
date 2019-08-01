@@ -26,23 +26,30 @@ class Show extends React.Component{
 
   render() {
     if (!this.state.random) return null
+    console.log(this.state.random.audio)
     return (
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="card">
-              <div className="card-image">
-                <figure className="image">
-                  <img src={this.state.random.image} alt={this.state.random.title}/>
-                </figure>
+            <div className="column randomcard is-half-tablet is-one-quarter">
+
+              <div className="card cardinfo">
+                <div className="card-image">
+                  <figure className="image">
+                    <img src={this.state.random.thumbnail} alt={this.state.random.title}/>
+                  </figure>
+                  <audio className="audio" controls="controls" src={this.state.random.audio}></audio>
+                </div>
+
+                <div className="card-header">
+                  <div className="card-header-title">{this.state.random.podcast_title}</div>
+                </div>
+
+                <div className="card-content">
+                  <p className="has-text-left-widescreen">{this.state.random.description}</p>
+                </div>
+
               </div>
-              <div className="card-header">
-                <div className="card-header-title">{this.state.random.podcast_title}</div>
-              </div>
-              <div className="card-content">
-                <p>{this.state.random.description}</p>
-              </div>
-              <a href={this.state.random.audio}></a>
             </div>
           </div>
         </div>
