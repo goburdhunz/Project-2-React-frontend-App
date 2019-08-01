@@ -1,1 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap');
+
+
+$family-primary:'monospace';
+$primary: hsl(348, 100%, 71%);
+
+.navbar {
+  height:150px;
+  padding-top: 40px;
+}
+
+nav.navbar{
+  background-color: hsl(348, 100%, 61%);
+}
+
+.listenrandom {
+color:white;
+font-weight: 700;
+height:46px;
+border: 4px solid white;
+padding: 5px;
+margin-top: 5px;
+}
+
+.micro {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.homesection{
+  min-height: 83vh;
+}
+div.container.formcontainer {
+  padding-left: 350px;
+  margin-top: 20px;
+}
+
+.searchbtn {
+  width: 200px;
+  padding-left: 200px;
+}
+
+input.searchinput {
+  width:500px;
+  height:50px;
+}
+
+.cardinfo {
+  max-height: 610px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subtitle {
+  margin-left: 390px;
+  margin-top: 130px;
+}
+
+
 @import 'bulma'

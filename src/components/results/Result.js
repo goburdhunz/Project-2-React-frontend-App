@@ -2,7 +2,7 @@ import React from 'react'
 
 const Result = ({image, title, description}) => {
   return (
-    <div className="card">
+    <div className="card cardinfo">
       <div className="card-image">
         <figure className="image">
           <img src={image} alt={title}/>

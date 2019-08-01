@@ -47,20 +47,21 @@ class Home extends React.Component {
 
   render() {
     return (
-      <section className="section">
-        <div className="container">
+      <section className="section homesection">
+        <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts below</h1>
+        <div className="container formcontainer">
           <form onSubmit={this.handleSubmit}>
             <div className="field">
               <div className="control">
                 <input
-                  className="input"
+                  className="input searchinput is-size-5"
                   type="search"
-                  placeholder="e.g Elon Musk"
+                  placeholder="e.g Elon Musk..."
                   onKeyUp={this.handleKeyUp}
-                />
+                  autoFocus/>
               </div>
             </div>
-            <button className="button is-primary">Search</button>
+            <button className="button is-size-5 searchbtn is-primary">Search</button>
           </form>
         </div>
 

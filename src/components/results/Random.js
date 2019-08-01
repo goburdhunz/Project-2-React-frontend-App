@@ -36,17 +36,16 @@ class Show extends React.Component{
                   <img src={this.state.random.image} alt={this.state.random.title}/>
                 </figure>
               </div>
+              <div className="card-header">
+                <div className="card-header-title">{this.state.random.podcast_title}</div>
+              </div>
+              <div className="card-content">
+                <p>{this.state.random.description}</p>
+              </div>
+              <a href={this.state.random.audio}></a>
             </div>
           </div>
         </div>
-
-        <div className="card-header">
-          <div className="card-header-title">{this.state.random.podcast_title}</div>
-        </div>
-        <div className="card-content">
-          <p>{this.state.random.description}</p>
-        </div>
-
       </section>
 
     )
