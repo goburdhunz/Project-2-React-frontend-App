@@ -52,10 +52,20 @@ input.searchinput {
   text-overflow: ellipsis;
 }
 
+.card-content:hover {
+  background-color: hsl(348, 100%, 71%);
+  transition: 1s;
+}
+
 .subtitle {
   margin-left: 390px;
   margin-top: 130px;
 }
 
+.loadmore {
+  width: 120px;
+  height: 90px;
+  background-color: white;
+}
 
 @import 'bulma'

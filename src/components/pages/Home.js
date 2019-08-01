@@ -50,7 +50,7 @@ class Home extends React.Component {
       <section className="section homesection">
         <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts below</h1>
         <div className="container formcontainer">
-          <form onSubmit={this.handleSubmit}>
+          <form onInput={this.handleSubmit}>
             <div className="field">
               <div className="control">
                 <input
@@ -61,7 +61,7 @@ class Home extends React.Component {
                   autoFocus/>
               </div>
             </div>
-            <button className="button is-size-5 searchbtn is-primary">Search</button>
+            <button onClick={this.handleSubmit}><img className="loadmore" src="https://i.gifer.com/9CoY.gif"/></button>
           </form>
         </div>
 
