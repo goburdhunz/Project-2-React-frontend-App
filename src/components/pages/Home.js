@@ -48,7 +48,7 @@ class Home extends React.Component {
   render() {
     return (
       <section className="section homesection">
-        <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts by typing below </h1>
+        <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts by typing below...</h1>
         <div className="container formcontainer">
           <form onInput={this.handleSubmit}>
             <div className="field">
