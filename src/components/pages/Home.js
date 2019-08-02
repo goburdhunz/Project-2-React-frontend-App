@@ -28,7 +28,7 @@ class Home extends React.Component {
 
     axios.get('https://listen-api.listennotes.com/api/v2/search', {
       headers: {
-        'X-ListenAPI-Key': '233c3d16ef0d4845ad5a72371d22f970'
+        'X-ListenAPI-Key': process.env.LISTEN_NOTES_API_KEY
       },
       params: {
         q: this.state.searchTerm,

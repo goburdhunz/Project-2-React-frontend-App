@@ -15,7 +15,7 @@ class Show extends React.Component{
   componentDidMount() {
     axios.get('https://listen-api.listennotes.com/api/v2/just_listen', {
       headers: {
-        'X-ListenAPI-Key': '233c3d16ef0d4845ad5a72371d22f970'
+        'X-ListenAPI-Key': process.env.LISTEN_NOTES_API_KEY
       }
     })
       .then(res => {
