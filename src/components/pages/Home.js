@@ -18,9 +18,8 @@ class Home extends React.Component {
 
 
   handleKeyUp(e) {
-    this.setState({searchTerm: e.target.value})
-    console.log(e.target.value)
-
+    if(!e.target.value) this.setState({ list: [] })
+    else this.setState({searchTerm: e.target.value})
   }
 
   handleSubmit(e){
@@ -48,16 +47,16 @@ class Home extends React.Component {
   render() {
     return (
       <section className="section homesection">
-        <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts by typing below...</h1>
+        <h1 className="subtitle has-text-weight-bold  is-family-monospace">Search our library of up-to-date podcasts <br/> by typing below and hitting ENTER...</h1>
         <div className="container formcontainer">
-          <form onInput={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
             <div className="field">
               <div className="control">
                 <input
                   className="input searchinput is-size-5"
                   type="search"
                   placeholder="e.g Elon Musk..."
-                  onKeyUp={this.handleKeyUp}
+                  onChange={this.handleKeyUp}
                   autoFocus/>
               </div>
             </div>

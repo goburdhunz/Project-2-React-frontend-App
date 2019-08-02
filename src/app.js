@@ -6,6 +6,7 @@ import Show from './components/results/Show'
 import Random from './components/results/Random'
 import Popular from './components/results/Popular'
 import Navbar from './common/Navbar'
+import PopularShow from './components/results/PopularShow'
 
 import './style.scss'
 
@@ -21,6 +22,7 @@ class App extends React.Component {
       <HashRouter>
         <Navbar />
         <Switch>
+          <Route path= "/popular_podcasts/:id" component={PopularShow} />
           <Route path= "/popular_podcasts" component={Popular} />
           <Route path= "/just_listen" component={Random} />
           <Route path= "/searchresults/:id" component={Show}/>

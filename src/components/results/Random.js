@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 
-class Show extends React.Component{
+class Random extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
@@ -60,4 +60,4 @@ class Show extends React.Component{
 }
 
 
-export default Show
+export default Random

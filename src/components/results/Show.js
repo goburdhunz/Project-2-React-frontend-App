@@ -7,9 +7,8 @@ class Show extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
-      podcast: {}
+      pod: {}
     }
-
   }
 
   componentDidMount() {
@@ -23,9 +22,7 @@ class Show extends React.Component{
       })
   }
 
-
   render() {
-    if (!this.state.pod) return null
     return (
       <section className="section">
         <div className="container">
@@ -45,7 +42,7 @@ class Show extends React.Component{
                 </div>
 
                 <div className="card-content">
-                  <p>{this.state.pod.podcast.description}</p>
+                  <p>{this.state.pod.description}</p>
                 </div>
 
               </div>

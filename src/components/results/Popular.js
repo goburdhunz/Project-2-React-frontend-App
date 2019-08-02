@@ -33,18 +33,19 @@ class Popular extends React.Component {
 
   render() {
     if (!this.state.popular) return null
-    console.log(this.state.popular)
     return (
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
             {this.state.popular.map(best =>
               <div className="column is-half-tablet is-one-third-desktop" key={best.id}>
-                <Result
-                  image={best.image}
-                  title={best.title}
-                  description={best.description}
-                />
+                <Link to= {`/popular_podcasts/${best.id}`}>
+                  <Result
+                    image={best.image}
+                    title={best.title}
+                    description={best.description}
+                  />
+                </Link>
               </div>
             )}
           </div>
