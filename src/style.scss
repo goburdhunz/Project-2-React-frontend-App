@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap');
 
 
-$family-primary:'monospace';
+$family-primary:'Libre Franklin';
 $primary: hsl(348, 100%, 71%);
 
 .navbar {
@@ -11,6 +11,12 @@ $primary: hsl(348, 100%, 71%);
 
 nav.navbar{
   background-color: hsl(348, 100%, 61%);
+}
+
+
+.listenrandom.popular.navbar-end {
+  margin-left: 600px;
+
 }
 
 .listenrandom {

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import Home from './components/pages/Home'
 import Show from './components/results/Show'
 import Random from './components/results/Random'
+import Popular from './components/results/Popular'
 import Navbar from './common/Navbar'
 
 import './style.scss'
@@ -20,6 +21,7 @@ class App extends React.Component {
       <HashRouter>
         <Navbar />
         <Switch>
+          <Route path= "/popular_podcasts" component={Popular} />
           <Route path= "/just_listen" component={Random} />
           <Route path= "/searchresults/:id" component={Show}/>
           <Route path= "/" component={Home}/>
