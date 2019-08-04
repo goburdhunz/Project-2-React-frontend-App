@@ -1,5 +1,5 @@
 # Project-2-React-frontend-App ![alt text](https://miro.medium.com/fit/c/50/50/1*HDIDs6Iq0bW-2qeYXqjp9w.png "GA logo")
-React Hackthon - 24 hours
+React Hackathon - 24 hours
 
 
 ## Project 2 General Assembly - React frontend 'Reacathon'
