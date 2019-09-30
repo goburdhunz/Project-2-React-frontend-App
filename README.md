@@ -66,7 +66,16 @@ We then styled and added a navbar routing.
 
 ## Major hurdles
 
-*Biggest hurdle at the start was choosing the right project direction and API - We looked at many different apis; Spotify, Deezer, Last FM, MovieDB, Etoro, Yahoo finance...We spent a lot of time researching and choosing the right API but in the end we settled on Listen Notes API. 
+Biggest hurdle at the start was choosing the right project direction and API - We looked at many different apis; Spotify, Deezer, Last FM, MovieDB, Etoro, Yahoo finance...We spent a lot of time researching and choosing the right API but in the end we settled on Listen Notes API. 
+
+It was also a challenge working for the first time in a pair for the project. Communication was crucial and allowed us to be able to build something within such a short timeframe. 
+
+## Key learnings
+
+React became much clearer for me during this project - From the initial project setup to building classical/functional components. It really made me realise how powerful of a library as you can get up and running very quickly and the reuseable components just makes things more efficient. 
+
+The idea of using external APIs was also something I really enjoyed - the whole process from requesting an API token to reading the docs and researching the right endpoints. 
+
 
 ## Future version 
 
