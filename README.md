@@ -51,11 +51,9 @@ After more research, we found the Listen Notes API for Podcasts - We got a token
 We tested the apis first to make sure we could receive the right data back and then we proceeded to build out the Home page, which would also be where the search input form would be and the search results would appear. Then we added a show page so the user could go into a specific search result and be able to listen to the audio directly on this show page. 
 
 
-![alt text](https://i.imgur.com/cpkakiF.png "Project screenshot")
+![alt text](https://i.imgur.com/c68efeZ.png?1 "Project screenshot")
 
 Afterwards we created the random podcast page and its subsequent show page, and then the popular list of podcasts. This popular list was a bit more complicated to access as the actual episodes with audio was nested within each 'parent' podcast wo we needed to map through the array of popular podcasts and grab the data we needed. 
-
-![alt text](https://i.imgur.com/rlXAi6F.png "Project screenshot")
 
 ![alt text](https://i.imgur.com/fs4OOeX.png "Project screenshot")
 
