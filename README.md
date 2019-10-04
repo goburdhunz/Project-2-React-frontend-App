@@ -54,8 +54,6 @@ We tested the apis first to make sure we could receive the right data back and t
 
 Afterwards, we created the random podcast page and its subsequent show page, and then the popular list of podcasts. This popular list was a bit more complicated to access as the actual episodes with audio was nested within each 'parent' podcast wo we needed to map through the array of popular podcasts and grab the data we needed.
 
-![alt text](https://i.imgur.com/fs4OOeX.png "Project screenshot")
-
 We then styled and added a navbar routing within a seperate component. This component could very likely be removed and reused in another project which really helps to underpin why React is so powerful.
 
 ![alt text](https://i.imgur.com/X1xhGJO.png "Navbar component screenshot")
@@ -77,6 +75,7 @@ Choosing a really well documented and easily accessible Public API was a major w
 
 Another win was accessing the individual episodes because we did this right at the end. At first, none of the video source files were showing up as they were nested - so we had to go one level deeper to loop and map through the available episodes which seems rather simple but was quite satisfying at the time.
 
+![alt text](https://i.imgur.com/fs4OOeX.png "Project screenshot")
 
 ## Key learnings
 
