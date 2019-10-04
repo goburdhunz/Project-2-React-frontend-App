@@ -48,7 +48,12 @@ Our first step was to choose the public api we wanted to consume. This proved to
 
 After more research, we found the Listen Notes API for Podcasts - We got a token quickly and the api was simple enough to understand and test within the docs. It also has interesting endpoints which offered search functionality, random podcasts, and a curated, most popular list of podcasts.
 
-We tested the apis first to make sure we could receive the right data back and then we proceeded to build out the Home page, which would also be where the search input form would be and the search results would appear. Then we added a show page so the user could go into a specific search result and be able to listen to the audio directly on this show page.
+We tested the apis first to make sure we could receive the right data back and then we proceeded to build out the Home page, which would also be where the search input form would be and the search results would appear. 
+
+![alt text](https://i.imgur.com/J3QL7OV.png "Home page component screenshot")
+
+
+Then we added a show page so the user could go into a specific search result and be able to listen to the audio directly on this show page. We used the Bulma framework card component and populated with the JSON payload from the request. 
 
 ![alt text](https://i.imgur.com/c68efeZ.png?1 "Project screenshot")
 
