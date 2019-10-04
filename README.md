@@ -58,6 +58,7 @@ Afterwards, we created the random podcast page and its subsequent show page, and
 
 We then styled and added a navbar routing within a seperate component. This component could very likely be removed and reused in another project which really helps to underpin why React is so powerful.
 
+![alt text](https://i.imgur.com/X1xhGJO.png "Navbar component screenshot")
 
 ## How to install project
 
