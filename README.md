@@ -50,14 +50,13 @@ After more research, we found the Listen Notes API for Podcasts - We got a token
 
 We tested the apis first to make sure we could receive the right data back and then we proceeded to build out the Home page, which would also be where the search input form would be and the search results would appear. Then we added a show page so the user could go into a specific search result and be able to listen to the audio directly on this show page. 
 
-
 ![alt text](https://i.imgur.com/c68efeZ.png?1 "Project screenshot")
 
-Afterwards we created the random podcast page and its subsequent show page, and then the popular list of podcasts. This popular list was a bit more complicated to access as the actual episodes with audio was nested within each 'parent' podcast wo we needed to map through the array of popular podcasts and grab the data we needed. 
+Afterwards, we created the random podcast page and its subsequent show page, and then the popular list of podcasts. This popular list was a bit more complicated to access as the actual episodes with audio was nested within each 'parent' podcast wo we needed to map through the array of popular podcasts and grab the data we needed. 
 
 ![alt text](https://i.imgur.com/fs4OOeX.png "Project screenshot")
 
-We then styled and added a navbar routing. 
+We then styled and added a navbar routing within a seperate component. This component could very likely be removed and reused in another project which really helps to underpin why React is so powerful. 
 
 ## How to install project 
 
@@ -70,16 +69,25 @@ Biggest hurdle at the start was choosing the right project direction and API - W
 
 It was also a challenge working for the first time in a pair for the project. Communication was crucial and allowed us to be able to build something within such a short timeframe. 
 
+## Wins 
+
+Choosing a really well documented and easily accessible Public API was a major win for us. Listen Notes made it really easy for us to read and understand the docs and the endpoints that were available. We could test some endpoints already on the docs page to see how the request was constructed and what we could expect from the payload.
+
+Another win was accessing the individual episodes because we did this right at the end. At first, none of the video source files were showing up as they were nested - so we had to go one level deeper to loop and map through the available episodes which seems rather simple but was quite satisfying at the time. 
+
+
 ## Key learnings
 
 React became much clearer for me during this project - From the initial project setup to building classical/functional components. It really made me realise how powerful of a library as you can get up and running very quickly and the reuseable components just makes things more efficient. 
 
-The idea of using external APIs was also something I really enjoyed - the whole process from requesting an API token to reading the docs and researching the right endpoints. 
-
+The idea of using external APIs was also something I really enjoyed - the whole process from requesting an API token to reading the docs and researching the right endpoints. This is the foundations of work as a software engineer, requesting and working with data. It was really nice to go through the whole process and to get the correct queried data, with the relevant fields.  
 
 ## Future version 
 
 * Splitting the home page and search results to two different views/components
 * Adding more functionality for filtered and sorted searches. 
+* Personalised profile with curated lists and favorite podcasts
+
+
 
 
